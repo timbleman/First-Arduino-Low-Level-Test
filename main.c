@@ -6,6 +6,7 @@
 int main (void) {
 
    DDRB  |= (1 << PB0);
+   DDRB  |= (1 << PB5);
    DDRB  &= ~(1 << PB3);
    PORTB |= (1 << PB2);
    int ledStatus = 0;
@@ -24,8 +25,10 @@ int main (void) {
 		_delay_ms(300);
 	}*/
 	PORTB &= ~(1 << PB0);
+  PORTB |= (1 << PB5);
 	_delay_ms(5000);
 	PORTB |= (1 << PB0);
+  PORTB &= ~(1 << PB5);
 	_delay_ms(5000);
    }
 
