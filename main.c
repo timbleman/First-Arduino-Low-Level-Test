@@ -24,12 +24,12 @@ int main (void) {
 		}
 		_delay_ms(300);
 	}*/
-	PORTB &= ~(1 << PB0);
-  PORTB |= (1 << PB5);
-	_delay_ms(5000);
-	PORTB |= (1 << PB0);
-  PORTB &= ~(1 << PB5);
-	_delay_ms(5000);
+  	PORTB &= ~(1 << PB0);
+    PORTB |= (1 << PB5);
+  	_delay_ms(5000);
+  	PORTB |= (1 << PB0);
+    PORTB &= ~(1 << PB5);
+  	_delay_ms(5000);
    }
 
    return 0;
